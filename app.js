@@ -44,6 +44,7 @@ multiButton.addEventListener('click', ()=>{
     multiAnwser.textContent = multiResult;
 });
 
+// Division Function
 import { div } from './calculations.js';
 const divInput1 = document.getElementById('div-input1');
 const divInput2 = document.getElementById('div-input2');
@@ -55,4 +56,18 @@ divButton.addEventListener('click', ()=>{
     const divValue2 = Number(divInput2.value);
     const divResult = div(divValue1, divValue2);
     divAnwser.textContent = divResult;
+});
+
+// Modolu Function
+import { mod } from './calculations.js';
+const modInput1 = document.getElementById('mod-input1');
+const modInput2 = document.getElementById('mod-input2');
+const modButton = document.getElementById('mod-btn');
+const modAnwser = document.getElementById('mod-anwser');
+
+modButton.addEventListener('click', ()=>{
+    const modValue1 = Number(modInput1.value);
+    const modValue2 = Number(modInput2.value);
+    const modResult = mod(modValue1, modValue2);
+    modAnwser.textContent = modResult;
 });

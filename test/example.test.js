@@ -97,4 +97,4 @@ test('Modulo 5%2 function', (expect)=>{
     const expected = 1;
     const actual = mod(input1, input2);
     expect.equal(actual, expected, 'modulo test');
-})
+});
