@@ -29,3 +29,18 @@ subButton.addEventListener('click', () => {
     subAnswer.textContent = subResult1;
 
 });
+
+// Multiply Function
+import { multi } from './calculations.js';
+const multiInput1 = document.getElementById('multi-input1');
+const multiInput2 = document.getElementById('multi-input2');
+const multiButton = document.getElementById('multi-btn');
+const multiAnwser = document.getElementById('multi-anwser');
+
+multiButton.addEventListener('click', ()=>{
+    const multiValue1 = Number(multiInput1.value);
+    const multiValue2 = Number(multiInput2.value);
+    const multiResult = multi(multiValue1, multiValue2);
+    multiAnwser.textContent = multiResult;
+});
+
