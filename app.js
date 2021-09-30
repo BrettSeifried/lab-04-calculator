@@ -44,3 +44,15 @@ multiButton.addEventListener('click', ()=>{
     multiAnwser.textContent = multiResult;
 });
 
+import { div } from './calculations.js';
+const divInput1 = document.getElementById('div-input1');
+const divInput2 = document.getElementById('div-input2');
+const divButton = document.getElementById('div-btn');
+const divAnwser = document.getElementById('div-anwser');
+
+divButton.addEventListener('click', ()=>{
+    const divValue1 = Number(divInput1.value);
+    const divValue2 = Number(divInput2.value);
+    const divResult = div(divValue1, divValue2);
+    divAnwser.textContent = divResult;
+});

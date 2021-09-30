@@ -86,6 +86,7 @@ test('Divide (10/2) function', (expect)=> {
     const input1 = 10;
     const input2 = 2;
     const expected = 5;
-    const actual = div(actual, expected, "division test");
+    const actual = div(input1, input2);
+    expect.equal(actual, expected, "division test");
 
 });
