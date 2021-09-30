@@ -1,7 +1,9 @@
+//  DO CALCULATIONS.JS FIRST
+
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { add_two, add, sub } from '../calculations.js';
+import { add_two, add, sub, multi } from '../calculations.js';
 
 const test = QUnit.test;
 
@@ -64,10 +66,18 @@ test('add(4,5) function', (expect) => {
     expect.equal(actual, expected, 'should add 3 & 2');
 });
 
-test('sub(10,5) function', (expect)=>{
+test('sub(10,4) function', (expect)=>{
     const input1 = 10;
     const input2 = 4;
     const expected = 6;
     const actual = sub(input1, input2);
-    expect.equal(actual, expected, 'Should get 5');
+    expect.equal(actual, expected, 'Should get 6');
+});
+
+test('multi(2,8) function', (expect)=> {
+    const input1 = 2;
+    const input2 = 8;
+    const expected = 16;
+    const actual = multi(input1, input2);
+    expect.equal(actual, expected, 'multi test');
 });

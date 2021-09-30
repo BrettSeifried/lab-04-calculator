@@ -10,13 +10,14 @@ main {
     border: 2px solid black;
     padding: 5px;
     margin: 5px;
+    height: 1fr;
     background-color: lightgreen;
-
 }
 
 h1, h2 {
     text-align: center;
     font-family: 'Iceland', cursive;
+    font-size: xx-large;
 }
 
 .results {
