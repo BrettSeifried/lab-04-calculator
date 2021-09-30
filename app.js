@@ -12,5 +12,5 @@ addButton.addEventListener('click', ()=> {
     const value1 = Number(addInput1.value);
     const value2 = Number(addInput2.value);
     const result = add(value1, value2);
-    console.log(result);
+    addAnswer.textContent = result;
 });
