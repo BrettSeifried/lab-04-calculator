@@ -11,6 +11,21 @@ addButton.addEventListener('click', ()=> {
   // console.log("add button is being clicked");
     const value1 = Number(addInput1.value);
     const value2 = Number(addInput2.value);
-    const result = add(value1, value2);
-    addAnswer.textContent = result;
+    const addResult = add(value1, value2);
+    addAnswer.textContent = addResult;
+});
+
+// Sub traction
+import { sub } from './calculations.js';
+const subInput1 = document.getElementById('sub-input1');
+const subInput2 = document.getElementById('sub-input2');
+const subButton = document.getElementById('sub-btn');
+const subAnswer = document.getElementById('sub-anwser');
+
+subButton.addEventListener('click', () => {
+    const subValue1 = Number(subInput1.value);
+    const subValue2 = Number(subInput2.value);
+    const subResult1 = sub(subValue1, subValue2);
+    subAnswer.textContent = subResult1;
+
 });
