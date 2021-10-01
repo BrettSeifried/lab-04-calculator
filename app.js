@@ -71,3 +71,17 @@ modButton.addEventListener('click', ()=>{
     const modResult = mod(modValue1, modValue2);
     modAnwser.textContent = modResult;
 });
+
+//Integer Function
+import { int } from './calculations.js';
+const intInput1 = document.getElementById('int-input1');
+const intInput2 = document.getElementById('int-input2');
+const intButton = document.getElementById('int-btn');
+const intAnwser = document.getElementById('int-anwser');
+
+intButton.addEventListener('click', ()=> {
+    const intValue1 = Number(intInput1.value);
+    const intValue2 = Number(intInput2.value);
+    const intResult = int(intValue1, intValue2);
+    intAnwser.textContent = intResult;
+});
