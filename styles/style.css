@@ -26,3 +26,9 @@ h1, h2 {
     font-weight: bold;
     border: solid 1px black;
 }
+
+button {
+    background-color: lightblue;
+    font-weight: bold;
+    border-radius: 20px;
+}
